@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database - Inline</title>
+    <link rel="stylesheet" href="tags.css"/>
+</head>
+<body>
+
+<h1>Database - inline</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Tags</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>New Create</td>
+            <td>
+                <div class="tag-select">
+                    <!-- 태그를 추가할 수 있는 입력 필드 -->
+                    <input type="text" placeholder="태그 추가" oninput="showDropdown(this)" onkeydown="handleEnter(event, this)">
+                    <!-- 태그 선택을 위한 드롭다운 메뉴 -->
+                    <div class="tag-dropdown" id="dropdown">
+                        <!-- 태그를 선택할 수 있는 옵션 -->
+                        <div onclick="selectTag(this)">test</div>
+                        <div onclick="selectTag(this)">test2</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script src="tags.js"></script>
+</body>
+</html>

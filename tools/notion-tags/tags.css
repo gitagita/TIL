@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f4f4f4;
+}
+.tag-select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.tag-select input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.tag-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    display: none;
+    max-height: 100px;
+    overflow-y: auto;
+    z-index: 1;
+    width: 100%;
+}
+.tag-dropdown div {
+    padding: 8px;
+    cursor: pointer;
+}
+.tag-dropdown div:hover {
+    background-color: #f0f0f0;
+}
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 15px;
+    position: relative;
+}
+.tag .remove-tag {
+    margin-left: 8px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
