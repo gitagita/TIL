@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import MdEditor from 'react-markdown-editor-lite';
 import 'react-markdown-editor-lite/lib/index.css';
-import './styles.css';
+import './PostEditor.css';
 
 const PostEditor = () => {
   const [title, setTitle] = useState('');
